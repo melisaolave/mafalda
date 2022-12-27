@@ -20,5 +20,5 @@ out.name = output name, default gdi.output.txt
 
 Example:
 
-get.gdi(wd=getwd(), mcmc, burnin=0.1, out.name="gdi.output.txt")
+get.gdi(wd=getwd(), mcmc="bpp_mcmc.out", burnin=0.1, out.name="gdi.output.txt")
 
