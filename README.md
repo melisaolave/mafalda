@@ -3,7 +3,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-**mafalda** is an R package providing a set of tools to facilitate the handling, filtering, and analysis of large datasets in ecology and evolution. It compiles functions developed across multiple research projects to process genomic, morphological, and ecological data.
+MAny Functions to Approach Large DAtasets (**mafalda**) in Ecology and Evolution is an R package providing a set of tools to facilitate the handling, filtering, and analysis of large datasets in ecology and evolution. It compiles functions developed across multiple research projects to process genomic, morphological, and ecological data.
 
 The package is designed to help manage common steps in evolutionary and biodiversity research workflows, including sequence processing, dataset filtering, and downstream analytical preparation.
 
