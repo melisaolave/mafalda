@@ -1,0 +1,17 @@
+Package: mafalda
+Type: Package
+Title: Many Functions to Approach Large Datasets in Ecology and Evolution
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Melisa",
+           family = "Olave",
+           email = "molave@mendoza-conicet.gob.ar",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7773-0189"))
+Description: mafalda provides a set of tools I have developed across different studies to process and analyze genomic, morphological, and ecological data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    pegas
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
