@@ -1,28 +1,50 @@
+# mafalda
 
-MAny Functions to Approach Large DAtasets (mafalda) in Ecology and Evolution is (going to be) an R library (sorry, still in progress)
+<!-- badges: start -->
+<!-- badges: end -->
 
-questions to molave@mendoza-conicet.gob.ar
+**mafalda** is an R package providing a set of tools to facilitate the handling, filtering, and analysis of large datasets in ecology and evolution. It compiles functions developed across multiple research projects to process genomic, morphological, and ecological data.
 
-follow updates in Twitter @Melisa_Olave and Mastodon melisaolave@ecoevo.social
+The package is designed to help manage common steps in evolutionary and biodiversity research workflows, including sequence processing, dataset filtering, and downstream analytical preparation.
 
+---
 
-Description of functions included (v0.0):
+## Installation
 
+You can install the development version of **mafalda** from GitHub using:
 
-get.gdi = a function to compute genealogical divergence index (gdi) (Jackson et al. 2017, Syst. Biol.) as proposed by Leache et al. 2019 (Syst. Biol). Gdi is used to compute the strength of divergence between pair of taxa for species delimitation analyses performed in bpp (Yang and Rannala 2010, PNAS) or ibpp (Solis-Lemus et al. 2015, Evolution).
+```r
+# install.packages("devtools")
+devtools::install_github("melisaolave/mafalda")
+```
 
-Usage: 
+## Citation
 
-wd =  working directory, defualt current directory
+If you use mafalda in your work, please cite it as:
+Olave, M. (2026). mafalda: Many Functions to Approach Large Datasets in Ecology and Evolution. R package. GitHub: https://github.com/melisaolave/mafalda
 
-mcmc = file name containing mcmc output of bpp/ibpp
+## License
 
-burnin = burnin for mcmc, 0.1 as default
+This package is released under the MIT License.
 
-out.name = output name, default gdi.output.txt
+Copyright (c) 2026 Melisa Olave
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
 
-Example:
+The Software is provided "as is", without warranty of any kind.
 
-get.gdi(wd=getwd(), mcmc="bpp_mcmc.out", burnin=0.1, out.name="gdi.output.txt")
+## Author
 
+Melisa Olave
+
+Associate Researcher, CONICET, Argentina
+
+International Fellow, Wellcome Sanger Institute, UK
+
+Email: molave@mendoza-conicet.gob.ar; mo14@sanger.ac.uk
+
+ORCID: 0000-0002-7773-0189
