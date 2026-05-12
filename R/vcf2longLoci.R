@@ -72,11 +72,18 @@ vcf2longLoci <- function(wd = getwd, vcf.name, kept.sites, reference,
     chr.snps <- sites[sites$CHROM == chr[i],]
     pos <- chr.snps$POS
     ref.chr <- unlist(as.character(ref[i]))
-    matrix <- c(matrix, paste(length(ind), 
-                              length(ref.chr)-length(unlist(strsplit(rm.initial.seq, split="")))-length(unlist(strsplit(rm.final.seq, split="")))))
-    for(k in 1:length(ind)){
+  
+  if(phased.vcf){
+    	n.ind <- length(ind)*2
+  	}else{
+    	n.ind <- length(ind)
+  	}
+  	  matrix <- c(matrix, paste(n.ind, 
+                            length(ref.chr)-length(unlist(strsplit(rm.initial.seq, split="")))-length(unlist(strsplit(rm.final.seq, split="")))))
+  
+  for(k in 1:length(ind)){
       if(phased.vcf){ # if phased vcf, reconstruct two alleles
-        cat("Phased vcf provided. Two alleles will be reconstructed\n")
+        #cat("Phased vcf provided. Two alleles will be reconstructed\n")
         ind.seq_0 <- ref.chr
         ind.seq_1 <- ref.chr
         SNP.count <- 1+CHR.count
