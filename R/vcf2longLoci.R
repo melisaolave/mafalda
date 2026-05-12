@@ -66,7 +66,7 @@ vcf2longLoci <- function(wd = getwd, vcf.name, kept.sites, reference,
       length(chr), "contigs will be reconstructed\n\t",
       length(ind), "of individuals found in vcf\n")
   if(phased.vcf){
-    cat("Phased vcf provided. Two alleles will be reconstructed\n")
+    cat("Phased vcf provided. Two alleles will be reconstructed\n\tIf your vcf has not been phased use phased.vcf=F instead\n")
   }
   matrix <-NULL
   CHR.count <- 0
