@@ -25,15 +25,14 @@ Olave, M. (2026). mafalda: Many Functions to Approach Large Datasets in Ecology 
 
 ## License
 
-This package is released under the MIT License.
-
 Copyright (c) 2026 Melisa Olave
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
+Permission is granted to use, copy, modify, and distribute this software
+for non-commercial research and educational purposes only.
+
+Any use of this software or derivatives must cite as mentioned above.
+
+Commercial use is prohibited without explicit written permission.
 
 The Software is provided "as is", without warranty of any kind.
 
